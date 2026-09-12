@@ -1,22 +1,22 @@
-# PROMPT DE DESARROLLO — ARTid (Facilitador de identidad digital para obras de arte)
+# PROMPT DE DESARROLLO — QRTE (Facilitador de identidad digital para obras de arte)
 
 > HISTORIA — concepto original facilitador, el código actual pivotó a SaaS central con tokens por obra. Ver `AGENTS.md`. No es spec.
 
-ARTid es un **facilitador**: ayuda al artista a montar su propio framework de identidad digital (QR + short URL + ficha pública), siendo el artista **dueño de su información**.
+QRTE es un **facilitador**: ayuda al artista a montar su propio framework de identidad digital (QR + short URL + ficha pública), siendo el artista **dueño de su información**.
 
 ---
 
 ## 1. CONCEPTO GENERAL
 
-ARTid **no aloja** las obras del artista. Es un **configurador** que lo conecta con sus propias herramientas.
+QRTE **no aloja** las obras del artista. Es un **configurador** que lo conecta con sus propias herramientas.
 
-| Pieza del framework | Dueño | Rol de ARTid |
+| Pieza del framework | Dueño | Rol de QRTE |
 |---|---|---|
 | Repo GitHub (metadata + imágenes) | Artista | Conectar vía OAuth y escribir ahí |
 | Ficha pública (frontend estático) | Artista (self-host) | Plantilla open source descargable |
 | Short URL (short.io) | Artista | (Pro) gestionar en su nombre |
 | QR permanente | Artista | Generarlo apuntando a su short URL |
-| Analytics | ARTid | Conteo de escaneos (futuro) |
+| Analytics | QRTE | Conteo de escaneos (futuro) |
 
 **Flujo de la obra:**
 
@@ -47,7 +47,7 @@ El **QR nunca cambia**; el destino del short URL sí puede cambiar (migrabilidad
 ## 3. PIEZAS DE CÓDIGO
 
 1. **Framework "ficha" open source** — frontend estático (routing por hash + render + redirect), versión genérica del prototipo. El artista lo descarga y lo monta.
-2. **Configurador SaaS (ARTid)** — auth + integración GitHub (estilo Coolify) + CRUD de obras que commitea a `artworks/<ID>/metadata.json` e imágenes en el repo del artista + generador de QR.
+2. **Configurador SaaS (QRTE)** — auth + integración GitHub (estilo Coolify) + CRUD de obras que commitea a `artworks/<ID>/metadata.json` e imágenes en el repo del artista + generador de QR.
 3. **Servicios futuros** — gestión short.io (Pro), analytics, tokens/credits.
 
 ---
@@ -62,7 +62,7 @@ El **QR nunca cambia**; el destino del short URL sí puede cambiar (migrabilidad
 
 ## 5. MODELO DE DATOS
 
-La **fuente de verdad** es el repo GitHub del artista. La BD de ARTid es **índice/caché** + cuenta/créditos.
+La **fuente de verdad** es el repo GitHub del artista. La BD de QRTE es **índice/caché** + cuenta/créditos.
 
 **Repo del artista (GitHub):**
 
@@ -75,7 +75,7 @@ La **fuente de verdad** es el repo GitHub del artista. La BD de ARTid es **índi
     manifest.json
 ```
 
-**BD de ARTid (índice/caché):**
+**BD de QRTE (índice/caché):**
 
 ```
 artists
@@ -166,7 +166,7 @@ credits / token_usage  (Fase billing)
 
 ## Decisiones abiertas
 
-- **Repo GitHub del artista**: ¿ARTid lo crea automáticamente o el artista vincula uno existente? (TBD)
+- **Repo GitHub del artista**: ¿QRTE lo crea automáticamente o el artista vincula uno existente? (TBD)
 
 ---
 

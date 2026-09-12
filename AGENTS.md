@@ -10,7 +10,7 @@ Contexto del proyecto para agentes de IA. Leer antes de tocar código.
 
 ## 1. Qué es (estado actual)
 
-**Marca actual: QRTE** (antes ARTid), por POORdesigner.com. SaaS (`qrte.poordesigner.com`): identidad digital para obras físicas con **pago único por tokens**. Cada obra obtiene **QR permanente** firmado que apunta a ficha pública `/o/{publicId}`.
+**Marca: QRTE** por POORdesigner.com. SaaS (`qrte.poordesigner.com`): identidad digital para obras físicas con **pago único por tokens**. Cada obra obtiene **QR permanente** firmado que apunta a ficha pública `/o/{publicId}`.
 
 - `1 token = QR + ficha básica para siempre`. Crear obra consume 1 (`Artist::canCreateArtwork()`).
 - Suscripciones Paddle son legado deprecado. `/planes` vende paquetes de tokens.

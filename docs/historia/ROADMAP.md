@@ -1,16 +1,16 @@
-# ARTid — Facilitador de identidad digital para obras de arte
+# QRTE — Facilitador de identidad digital para obras de arte
 
 > HISTORIA — concepto original facilitador, el código actual pivotó a SaaS central con tokens por obra. Ver `AGENTS.md`. No es spec.
 
-ARTid ayuda al artista a montar su propio framework de identidad (QR permanente + short URL + ficha pública), siendo el artista **dueño de su información**. El SaaS es el **configurador**.
+QRTE ayuda al artista a montar su propio framework de identidad (QR permanente + short URL + ficha pública), siendo el artista **dueño de su información**. El SaaS es el **configurador**.
 
 ## Estado
 
 - **Origen**: prototipo estático (`arte/` dentro del repo `tachoatomico/portal`).
-- **Decisión (revisada)**: ARTid es un **facilitador/configurador**, no un hosting centralizado.
+- **Decisión (revisada)**: QRTE es un **facilitador/configurador**, no un hosting centralizado.
 - **Propiedad**: el artista es dueño de su GitHub, su short.io, su dominio y su ficha.
 - **Stack**: Laravel + MySQL + Redis sobre Coolify.
-- **Repo**: `poordesigner/artid`.
+- **Repo**: `poordesigner/QRTE`.
 - **Local**: `C:\opencode\proyectos\qrte`.
 
 ---
@@ -18,7 +18,7 @@ ARTid ayuda al artista a montar su propio framework de identidad (QR permanente 
 ## Roadmap
 
 ### Fase 0 — Fundamentos ✅
-- [x] Repo `artid` + cuenta GitHub
+- [x] Repo `QRTE` + cuenta GitHub
 - [x] Laravel base + docker (app/nginx/queue/scheduler/mysql/redis)
 - [x] Deploy automático en Coolify
 
@@ -76,7 +76,7 @@ credits / token_usage  (Fase 4)
 
 ## Decisiones abiertas
 
-- **Repo GitHub del artista**: ¿ARTid lo crea automáticamente o el artista vincula uno existente? (TBD)
+- **Repo GitHub del artista**: ¿QRTE lo crea automáticamente o el artista vincula uno existente? (TBD)
 
 ---
 

@@ -1,8 +1,8 @@
-# CONTEXTO — Prototipo estático ARTid
+# CONTEXTO — Prototipo estático QRTE
 
 > HISTORIA — prototipo estático base, el código actual pivotó a SaaS central con tokens por obra. Ver `AGENTS.md`. No es spec.
 
-Documento de referencia del prototipo estático de ARTid, construido dentro del repo `tachoatomico/portal`, carpeta `arte/`. Sirve de base para el desarrollo del SaaS.
+Documento de referencia del prototipo estático de QRTE, construido dentro del repo `tachoatomico/portal`, carpeta `arte/`. Sirve de base para el desarrollo del SaaS.
 
 ---
 

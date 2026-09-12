@@ -1,4 +1,4 @@
-# System — renombre total ARTid → QRTE (FASE 1 HECHA, resto bloqueado)
+# System — renombre total QRTE → QRTE (FASE 1 HECHA, resto bloqueado)
 
 - Track: `System`. Readiness: `blocked` para fases 2-4. No ejecutar sin autorización por fase.
 - Objetivo: eliminar todo rastro `qrte` y dejar `qrte` en código, repo, VPS e integraciones.
