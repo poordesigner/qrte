@@ -11,7 +11,7 @@ ARTid ayuda al artista a montar su propio framework de identidad (QR permanente 
 - **Propiedad**: el artista es dueño de su GitHub, su short.io, su dominio y su ficha.
 - **Stack**: Laravel + MySQL + Redis sobre Coolify.
 - **Repo**: `poordesigner/artid`.
-- **Local**: `C:\opencode\proyectos\bepoor\artid`.
+- **Local**: `C:\opencode\proyectos\qrte`.
 
 ---
 
