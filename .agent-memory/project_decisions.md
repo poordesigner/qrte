@@ -13,3 +13,4 @@ Política: solo repetible, máximo ~30 líneas, obsoleto se marca no se borra. N
 - `2026-09-10` — QR firmado HMAC versionado con `public_id` UUID — ficha pública verificable.
 - `2026-09-10` — tickets con `TKT-####`, sin auto-envío IA ni auto-cierre — admin decide.
 - `2026-09-10` — esquema `solo-prod` en `VPS-01` con hook `migrate` a potestad del admin — deploy simple.
+- `2026-09-14` — base de datos renombrada a `qrte` (dump/restore + env Coolify) y vestigios previos purgados — identidad única QRTE.
