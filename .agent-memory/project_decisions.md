@@ -14,3 +14,5 @@ Política: solo repetible, máximo ~30 líneas, obsoleto se marca no se borra. N
 - `2026-09-10` — tickets con `TKT-####`, sin auto-envío IA ni auto-cierre — admin decide.
 - `2026-09-10` — esquema `solo-prod` en `VPS-01` con hook `migrate` a potestad del admin — deploy simple.
 - `2026-09-14` — base de datos renombrada a `qrte` (dump/restore + env Coolify) y vestigios previos purgados — identidad única QRTE.
+- `2026-09-14` — dominios enrutados al mismo servicio: `qrte.poordesigner.com` (app) y `arte.poordesigner.com` (fichas/QR); `APP_URL`=qrte, `QRTE_PUBLIC_URL`=`https://arte.poordesigner.com`.
+- `2026-09-14` — storage R2 en bucket `qrtebucket` (público `pub-2adb…r2.dev`), migrado desde el bucket previo — nombre alineado a la marca.
